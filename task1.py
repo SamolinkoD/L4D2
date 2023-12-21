@@ -11,3 +11,9 @@
 #     2) Не забудь про аннотації типів тести їх перевіряють також!!!
 
 
+def get_div_amount(number: int, divisor: int) -> int:
+    amount = 0
+    while number >= divisor:
+        amount += 1
+        number -= divisor
+    return amount
